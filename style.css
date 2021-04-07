@@ -112,7 +112,7 @@
   color: red;
 }
 .audioPlayer .audioPlayerUI {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   will-change: transform, filter;
   transition: 0.5s;
 }
@@ -207,7 +207,7 @@
 .audioPlayer .audioPlayerUI .currentProgressBar .currentProgress {
   background-color: rgba(252, 0, 0, 0.75);
   width: 0px;
-  height: 3px;
+  height: 5px;
   transition: 100ms;
 }
 
