@@ -1,12 +1,3 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register(".serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-
 var app = new Vue({
   el: "#app",
   data: {
@@ -182,3 +173,13 @@ var app = new Vue({
 
     clearTimeout(this.checkingCurrentPositionInTrack);
   } });
+  
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register(".serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+    })
+  }
+  
